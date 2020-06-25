@@ -2,7 +2,7 @@
 
 This repository contains the source files for supported base images. These images all work with the [Autograder Sandbox](../autograder-sandbox) library and can be inherited from to create new images.
 
-Contributions to this repository are welcome in the form of pull requests. For a base image to be valid, it must contain a user named `autograder`, and a directory of `/home/autograder/working_dir` set as the images `WORKDIR`. The following `Dockerfile` snippet accomplishes this for Ubuntu 16:
+Contributions to this repository are welcome in the form of pull requests. Each base image should be placed in a separate directory in the top-level directory of this repo. Those image-specific directories should contain a file named `Dockerfile` and any other files needed to build the image. For a base image to be valid, it must contain a user named `autograder`, and a directory of `/home/autograder/working_dir` set as the images `WORKDIR`. The following `Dockerfile` snippet accomplishes this for Ubuntu 16:
 
 ```
 RUN mkdir -p /home/autograder/working_dir
