@@ -8,7 +8,7 @@ Contributions to this repository are welcome in the form of pull requests. Each 
 - The image must enter via user `root`.
 - Python 3.5 or greater must be installed and available on the system PATH.
 
-The following `Dockerfile` snippet accomplishes this for Ubuntu 16:
+The following `Dockerfile` snippet accomplishes this for Ubuntu 16, 18, and 20:
 
 ```
 RUN apt-get update --fix-missing && apt-get install -y python3
@@ -20,6 +20,13 @@ RUN useradd autograder && \
    chown -R autograder:autograder /home/autograder
 
 WORKDIR /home/autograder/working_dir
+
+# Ubuntu 20 has a different default CMD directive, so we 
+# need to specify this explicity.
+CMD ["/bin/bash"]
+
+# Make sure that this is the last USER directive in your Dockerfile
+USER root
 ```
 
 ## Images
