@@ -36,3 +36,7 @@ This section lists the tags for each supported base image.
 `eecsautograder/ubuntu16:latest`: Based on Ubuntu 16 (Xenial)
 
 `eecsautograder/ubuntu18:latest`: Based on Ubuntu 18 (Bionic)
+
+`eecsautograder/ubuntu20:latest`: Based on Ubuntu 20 (Focal)
+
+`eecsautograder/ubuntu22:latest`: Based on Ubuntu 22 (Jammy)
