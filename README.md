@@ -40,3 +40,5 @@ This section lists the tags for each supported base image.
 `eecsautograder/ubuntu20:latest`: Based on Ubuntu 20 (Focal)
 
 `eecsautograder/ubuntu22:latest`: Based on Ubuntu 22 (Jammy)
+
+`eecsautograder/ubuntu24:latest`: Based on Ubuntu 24 (Noble)
